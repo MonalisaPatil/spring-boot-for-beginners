@@ -13,9 +13,10 @@ public class CRUDController {
 	private HashMap<String, User> collection = new HashMap<>();
 
 	@PostMapping(value = "/createUser", produces = MediaType.APPLICATION_JSON_VALUE)
-	public String createUser(@RequestBody User user) {
+	public String abc(@RequestBody User user) {
 		collection.put(user.getName(), user);
 		return "Successfully added the records";
+
 	}
 	@GetMapping(value = "/getUser",produces = MediaType.APPLICATION_JSON_VALUE)
 	public User getUserByName(@RequestParam String name) {

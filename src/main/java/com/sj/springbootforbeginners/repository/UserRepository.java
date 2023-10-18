@@ -10,7 +10,13 @@ public interface UserRepository extends MongoRepository<User, String> {
     
     @Query("{name:'?0'}")
     User findItemByName(String name);
-    
+//
+//    @Query("{name:' ?0'}")
+//    List<User> findAllA(String name){
+//
+//    }
+
+
     @Query(value="{city:'?0'}", fields="{'name' : 1, 'phoneNumber' : 1}")
     List<User> findAll(String category);
     
