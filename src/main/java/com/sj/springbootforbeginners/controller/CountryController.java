@@ -35,7 +35,6 @@ public class CountryController {
 	public List<CountryDataItem> getAllRegionWrtInput(String input){
 		return countryService.getAllRegionWrtInput(input);
 	}
-// TODO: 10/20/23 Write a program to extract all the countries official name that drives car on sides provided as input.
 
 	@GetMapping(value = "/getCountryWrtDriveway",produces = MediaType.APPLICATION_JSON_VALUE)
 	public List<String> getCountryWrtDriveway(String input){
