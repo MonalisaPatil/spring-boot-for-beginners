@@ -1,0 +1,7 @@
+com/sj/springbootforbeginners/controller/CRUDController.class
+com/sj/springbootforbeginners/SpringBootForBeginnersApplication.class
+com/sj/springbootforbeginners/model/User.class
+com/sj/springbootforbeginners/controller/HelloController.class
+com/sj/springbootforbeginners/repository/UserRepository.class
+com/sj/springbootforbeginners/controller/MongoController.class
+com/sj/springbootforbeginners/config/SwaggerConfig.class
