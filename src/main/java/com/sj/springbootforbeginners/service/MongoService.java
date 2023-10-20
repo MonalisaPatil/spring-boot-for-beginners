@@ -15,6 +15,7 @@ public class MongoService {
     @Autowired
     private UserRepository userRepository;
 
+
     public String createUser(User user) {
         userRepository.save(user);
         return "Successfully added the records";
@@ -71,4 +72,45 @@ public class MongoService {
         }
         return listN.size();
     }
+
+    public List<User> allUserWithDivisiblePhoneNumber(int input){
+        List<User> allUserP = userRepository.findAll();
+        List<User> phoneLog= new ArrayList<>();
+        for (User pl: allUserP){
+            if (Integer.valueOf(pl.getPhoneNumber())% input ==0 ){
+                phoneLog.add(pl);
+            }
+        }
+        return phoneLog;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

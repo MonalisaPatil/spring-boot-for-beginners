@@ -56,4 +56,38 @@ public class MongoController {
 		return mongoService.numberOfStudentNameStartsWith(name.toLowerCase());
 	}
 
+
+// TODO: 10/18/23 : Write a program to extract all the users that are having phone numbers divisible by the given input.
+	@GetMapping(value = "/allUserWithDivisiblePhoneNumber", produces = MediaType.APPLICATION_JSON_VALUE)
+	public List<User> allUserWithDivisiblePhoneNumber(@RequestParam int input){
+		return mongoService.allUserWithDivisiblePhoneNumber(input);
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
