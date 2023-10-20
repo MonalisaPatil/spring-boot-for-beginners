@@ -4,9 +4,9 @@ spring:
   profiles:
     active: local
   datasource:
-    url: jdbc:mysql://0.0.0.0:3306/firstDatabase
-    username: root
-    password: test-password
+    url: jdbc:mysql://localhost:3306/firstDatabase
+    username: shumona
+    password: Nisha@11
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     database-platform: org.hibernate.dialect.MySQL5Dialect

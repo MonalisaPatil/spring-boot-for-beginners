@@ -5,6 +5,6 @@ import java.util.ArrayList;
 public interface EmpService {
 	ArrayList<Employee> findAllEmployee();
 	Employee findAllEmployeeByID(long id);
-	void addEmployee();
+	void addEmployee(Employee employee);
 	void deleteAllData();
 }

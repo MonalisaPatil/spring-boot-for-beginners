@@ -32,15 +32,8 @@ public class EmpServiceImpl implements EmpService {
 	}
 	
 	@Override
-	public void addEmployee() {
-		ArrayList<Employee> emp = new ArrayList<Employee>();
-		emp.add(new Employee("Lucknow", "Shubham"));
-		emp.add(new Employee("Delhi", "Puneet"));
-		emp.add(new Employee("Pune", "Abhay"));
-		emp.add(new Employee("Noida", "Anurag"));
-		for (Employee employee : emp) {
-			employeeRepository.save(employee);
-		}
+	public void addEmployee(Employee employee) {
+		employeeRepository.save(employee);
 	}
 	
 	@Override

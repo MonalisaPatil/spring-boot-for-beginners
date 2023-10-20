@@ -4,11 +4,7 @@ import java.util.ArrayList;
 import com.sj.springbootforbeginners.model.Employee;
 import com.sj.springbootforbeginners.service.EmpServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 
 @RestController
@@ -17,9 +13,9 @@ public class EmpController {
 	@Autowired
 	EmpServiceImpl empServiceImpl;
 
-	@PostMapping("/")
-	public void add() {
-		empServiceImpl.addEmployee();
+	@PostMapping("/createEmployee")
+	public void add(@RequestBody Employee employee) {
+		empServiceImpl.addEmployee(employee);
 	}
 
 	@GetMapping("/findall")
