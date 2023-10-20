@@ -55,16 +55,12 @@ public class EmployeeController {
         public List<Employee> getEmployeeWrtCityTitleGiven(@RequestParam String employeeTitle, @RequestParam String employeeCity){
                 return employeeService.getEmployeeWrtCityTitleGiven(employeeCity,employeeTitle);
         }
-        // TODO: 10/18/23  Write a program to exrtract employees whose cities have equal or more than three vowel character.
+
         @GetMapping(value="/getCitieswithGivenVowelCount", produces = MediaType.APPLICATION_JSON_VALUE)
         public List<String> getCitiesWithGivenVowelCount(@RequestParam int input){
                 return employeeService.getCitiesWithGivenVowelCount(input);
         }
 
-//        @GetMapping(value="/getCountry", produces = MediaType.APPLICATION_JSON_VALUE)
-//        public  List<String> getCountry(){
-//                return employeeService.getCountry
-//        }
 
 
 }
