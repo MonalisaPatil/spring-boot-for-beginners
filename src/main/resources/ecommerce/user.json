@@ -1,0 +1,65 @@
+[
+ {
+   "user_id": 100,
+   "username": "anna0",
+   "password": "white00",
+   "full_name": "Anna Addison",
+   "address": "1325 Candy Rd, San Francisco, CA 96123",
+   "email": "anna.addison@yahoo.com",
+   "phone": 3841019535
+ },
+ {
+   "user_id": 101,
+   "username": "carol1",
+   "password": "orange01",
+   "full_name": "Carol Campbell",
+   "address": "1931 Brown St, Gainesville, FL 85321",
+   "email": "carol.campbell@aol.com ",
+   "phone": 2548952651
+ },
+ {
+   "user_id": 102,
+   "username": "julia2",
+   "password": "yellow02",
+   "full_name": "Julia Jones",
+   "address": "1622 Seaside St, Seattle, WA 32569",
+   "email": "jolie.jones@msn.com",
+   "phone": 3651469235
+ },
+ {
+   "user_id": 103,
+   "username": "irene3",
+   "password": "blue03",
+   "full_name": "Irene Everly",
+   "address": "1756 East Dr, Houston, TX 28562",
+   "email": "irene.everly@gmail.com",
+   "phone": 9859423698
+ },
+ {
+   "user_id": 104,
+   "username": "rachel4",
+   "password": "red04",
+   "full_name": "Rachel Rose",
+   "address": "1465 River Dr, Boston, MA 43625",
+   "email": "rachel.rose@hotmail.com",
+   "phone": 2945632543
+ },
+ {
+   "user_id": 105,
+   "username": "sophie5",
+   "password": "green05",
+   "full_name": "Sophie Sutton",
+   "address": "1896 West Dr, Portland, OR 65842",
+   "email": "sophie.sutton@yahoo.com",
+   "phone": 5169525614
+ },
+ {
+   "user_id": 106,
+   "username": "wendy6",
+   "password": "purple06",
+   "full_name": "Wendy West",
+   "address": "1252 Vine St, Chicago, IL 73215",
+   "email": "wendy.west@gmail.com",
+   "phone": 6645936156
+ }
+]

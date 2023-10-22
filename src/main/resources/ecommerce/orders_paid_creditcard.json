@@ -1,0 +1,30 @@
+[
+ {
+   "credit_card_number": 2563240000000000,
+   "order_id": 1000
+ },
+ {
+   "credit_card_number": 1356320000000000,
+   "order_id": 1001
+ },
+ {
+   "credit_card_number": 6843230000000000,
+   "order_id": 1002
+ },
+ {
+   "credit_card_number": 3187950000000000,
+   "order_id": 1003
+ },
+ {
+   "credit_card_number": 3565470000000000,
+   "order_id": 1004
+ },
+ {
+   "credit_card_number": 6532140000000000,
+   "order_id": 1005
+ },
+ {
+   "credit_card_number": 1354680000000000,
+   "order_id": 1006
+ }
+]

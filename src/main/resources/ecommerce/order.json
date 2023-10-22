@@ -1,0 +1,93 @@
+[
+ {
+   "orderNumber": 1000,
+   "numberOfItems": 4,
+   "shippingCost": 7,
+   "tax": 0.0925,
+   "orderTotalCost": 50.02,
+   "orderPlacedDate": "2018-10-17",
+   "orderDeliveryDate": "2018-10-20",
+   "customerName": "Anna Addison",
+   "ship_address": "1325 Candy Rd, San Francisco, CA 96123",
+   "tracking_number": "ZW60001 ",
+   "delivery_status": 1
+ },
+ {
+   "orderNumber": 1001,
+   "numberOfItems": 5,
+   "shippingCost": 8,
+   "tax": 0.06,
+   "orderTotalCost": 62.45,
+   "orderPlacedDate": "2018-10-15",
+   "orderDeliveryDate": "2018-10-18",
+   "customerName": "Carol Campbell",
+   "ship_address": "1931 Brown St, Gainesville, FL 85321",
+   "tracking_number": "AB61001 ",
+   "delivery_status": 0
+ },
+ {
+   "orderNumber": 1002,
+   "numberOfItems": 7,
+   "shippingCost": 10,
+   "tax": 0.087,
+   "orderTotalCost": 40.33,
+   "orderPlacedDate": "2018-10-14",
+   "orderDeliveryDate": "2018-10-17",
+   "customerName": "Julia Jones ",
+   "ship_address": "1622 Seaside St, Seattle, WA 32569 ",
+   "tracking_number": "CD62001 ",
+   "delivery_status": 1
+ },
+ {
+   "orderNumber": 1003,
+   "numberOfItems": 9,
+   "shippingCost": 20,
+   "tax": 0.0625,
+   "orderTotalCost": 70.98,
+   "orderPlacedDate": "2018-10-12",
+   "orderDeliveryDate": "2018-10-15",
+   "customerName": "Irene Everly ",
+   "ship_address": "1756 East Dr, Houston, TX 28562",
+   "tracking_number": "KB63001 ",
+   "delivery_status": 0
+ },
+ {
+   "orderNumber": 1004,
+   "numberOfItems": 6,
+   "shippingCost": 7,
+   "tax": 0.0625,
+   "orderTotalCost": 30.45,
+   "orderPlacedDate": "2018-10-16",
+   "orderDeliveryDate": "2018-10-19",
+   "customerName": "Rachel Rose",
+   "ship_address": "1465 River Dr, Boston, MA 43625 ",
+   "tracking_number": "IK64001 ",
+   "delivery_status": 1
+ },
+ {
+   "orderNumber": 1005,
+   "numberOfItems": 5,
+   "shippingCost": 8,
+   "tax": 0.0625,
+   "orderTotalCost": 100.2,
+   "orderPlacedDate": "2018-10-13",
+   "orderDeliveryDate": "2018-10-16",
+   "customerName": "Sophie Sutton",
+   "ship_address": "1896 West Dr, Portland, OR 65842",
+   "tracking_number": "OP65001 ",
+   "delivery_status": 0
+ },
+ {
+   "orderNumber": 1006,
+   "numberOfItems": 3,
+   "shippingCost": 5,
+   "tax": 0.1025,
+   "orderTotalCost": 58.52,
+   "orderPlacedDate": "2018-10-21",
+   "orderDeliveryDate": "2018-10-24",
+   "customerName": "Wendy West",
+   "ship_address": "1252 Vine St, Chicago, IL 73215",
+   "tracking_number": "XH66001 ",
+   "delivery_status": 1
+ }
+]

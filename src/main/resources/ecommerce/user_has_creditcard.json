@@ -1,0 +1,30 @@
+[
+ {
+   "user_id": 100,
+   "credit_card_number": 2563240000000000
+ },
+ {
+   "user_id": 101,
+   "credit_card_number": 1356320000000000
+ },
+ {
+   "user_id": 102,
+   "credit_card_number": 6843230000000000
+ },
+ {
+   "user_id": 103,
+   "credit_card_number": 3187950000000000
+ },
+ {
+   "user_id": 104,
+   "credit_card_number": 3565470000000000
+ },
+ {
+   "user_id": 105,
+   "credit_card_number": 6532140000000000
+ },
+ {
+   "user_id": 106,
+   "credit_card_number": 1354680000000000
+ }
+]

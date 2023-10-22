@@ -1,0 +1,122 @@
+[
+ {
+   "optionNumber": 1201,
+   "optionDescription": "Macbook Pro 13.3-inch"
+ },
+ {
+   "optionNumber": 1202,
+   "optionDescription": "Macbook Pro 15.4-inch"
+ },
+ {
+   "optionNumber": 1301,
+   "optionDescription": "Macbook Air 11.6-inch"
+ },
+ {
+   "optionNumber": 1302,
+   "optionDescription": "Macbook Air 13-inch"
+ },
+ {
+   "optionNumber": 1401,
+   "optionDescription": "Iphone X 128GB"
+ },
+ {
+   "optionNumber": 1402,
+   "optionDescription": "Iphone X 256GB"
+ },
+ {
+   "optionNumber": 1501,
+   "optionDescription": "Iphone 7 64GB"
+ },
+ {
+   "optionNumber": 1502,
+   "optionDescription": "Iphone 7 32GB"
+ },
+ {
+   "optionNumber": 1601,
+   "optionDescription": "Iphone 8 64GB"
+ },
+ {
+   "optionNumber": 1602,
+   "optionDescription": "Iphone 8 128GB"
+ },
+ {
+   "optionNumber": 1701,
+   "optionDescription": "Ipad Air 9.7-inch"
+ },
+ {
+   "optionNumber": 1702,
+   "optionDescription": "Ipad Air 12-inch"
+ },
+ {
+   "optionNumber": 1801,
+   "optionDescription": "Ipad Mini 7.9-inch"
+ },
+ {
+   "optionNumber": 1802,
+   "optionDescription": "Ipad Mini 10-inch"
+ },
+ {
+   "optionNumber": 1901,
+   "optionDescription": "ESC8000 G3 - 8 G Intel Xeon E5-1603 V4(2.80GHz,140W,L3:10M)"
+ },
+ {
+   "optionNumber": 1902,
+   "optionDescription": "ESC8000 G3 - 8 G Intel Xeon E5-1620 v3 (3.5G,140W,L3:10M,4C,HT)"
+ },
+ {
+   "optionNumber": 2001,
+   "optionDescription": "ESC8000 G4 - 8 G Intel Xeon E5-1603 v3 (3.5G,140W,L3:10M,4C,HT)"
+ },
+ {
+   "optionNumber": 2002,
+   "optionDescription": "ESC8000 G4 - 8 G Intel Xeon E5-1620 v3 (3.5G,140W,L3:10M,4C,HT)"
+ },
+ {
+   "optionNumber": 2101,
+   "optionDescription": "XPS 13 - 5080 8GB LPDDR3 1866MHz"
+ },
+ {
+   "optionNumber": 2102,
+   "optionDescription": "XPS 13 - 5080 16GB LPDDR3 1866MHz"
+ },
+ {
+   "optionNumber": 2201,
+   "optionDescription": "XPS 15- 5070 256GB PCIe Solid State Drive"
+ },
+ {
+   "optionNumber": 2202,
+   "optionDescription": "XPS 15- 5070 500GB PCIe Solid State Drive"
+ },
+ {
+   "optionNumber": 2301,
+   "optionDescription": "Monoprice Ultra Slim Series High Speed HDMI Cable - 4K - Length - 1ft"
+ },
+ {
+   "optionNumber": 2302,
+   "optionDescription": "Monoprice Ultra Slim Series High Speed HDMI Cable - 4K - Length - 1.5ft"
+ },
+ {
+   "optionNumber": 2401,
+   "optionDescription": "Monoprice Ultra Slim Series High Speed HDMI Cable - 4K - Length - 3ft"
+ },
+ {
+   "optionNumber": 2402,
+   "optionDescription": "Monoprice Ultra Slim Series High Speed HDMI Cable - 4K - Length - 5ft"
+ },
+ {
+   "optionNumber": 2501,
+   "optionDescription": "COWIN E7 PRO - Black"
+ },
+ {
+   "optionNumber": 2502,
+   "optionDescription": "COWIN E7 PRO - Red"
+ },
+ {
+   "optionNumber": 2601,
+   "optionDescription": "COWIN E7 PRO - Pink"
+ },
+ {
+   "optionNumber": 2602,
+   "optionDescription": "COWIN E7 PRO - White"
+ }
+]
