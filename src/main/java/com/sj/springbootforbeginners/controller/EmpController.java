@@ -33,6 +33,6 @@ public class EmpController {
 		empServiceImpl.deleteAllData();
 	}
 }
-// TODO: 10/22/23 Controller ---Product 
+// TODO: 10/22/23 Controller ---Product
 // TODO: 10/22/23   SHow all the categories
 // TODO: 10/22/23  show me products based on the category 
