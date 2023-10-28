@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 public class OrderController {
 
@@ -21,5 +23,12 @@ public class OrderController {
     public Response getOrderDetailsbyOrderId(@RequestParam String orderId){
         return  orderService.getOrderDetailsbyOrderId(orderId);
     }
+
+    @GetMapping(value = "/getAllOrdersDetails", produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<Response> getAllOrdersDetails(){
+        return orderService.getAllOrdersDetails();
+    }
+
+
 
 }

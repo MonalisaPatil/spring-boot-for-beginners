@@ -18,20 +18,32 @@ public class ProductController {
     ProductServiceImpl productServiceImpl;
 
     @GetMapping(value = "/getCategory", produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<Category> getCategory(){
+    public List<Category> getCategory() {
         return productServiceImpl.getCategory();
     }
 
-    @GetMapping (value= "/getProductWrtCategory", produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<Product> getProductWrtCategory(int categoryId){
+    @GetMapping(value = "/getProductWrtCategory", produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<Product> getProductWrtCategory(int categoryId) {
         return productServiceImpl.getProductWrtCategory(categoryId);
-    }
-
-    @GetMapping (value = "/getProductInfo", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ProductResponse getProductInfo(@RequestParam int productId){
-        return productServiceImpl.getProductInfo(productId);
     }
 
 // TODO: 10/25/23 write a endpoint to get the productInfo based on the given productId and abiding the given response structurte
 
+    @GetMapping(value = "/getProductInfo", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ProductResponse getProductInfo(@RequestParam int productId) {
+        return productServiceImpl.getProductInfo(productId);
+    }
+
+
+// TODO: 10/25/23 write a endpoint to get the productInfo of all the products  and abiding the given response structure
+
+    @GetMapping(value = "/getAllProductInfo", produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<ProductResponse> getAllProductInfo() {
+        return productServiceImpl.getAllProductInfo();
+    }
+
+    @GetMapping(value = "/getAllProductPriceByProductInfo", produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<ProductResponse> getAllProductPriceByProductInfo(int price) {
+        return productServiceImpl.getAllProductPriceByProductInfo(price);
+    }
 }

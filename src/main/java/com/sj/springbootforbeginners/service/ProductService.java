@@ -15,5 +15,13 @@ public interface ProductService {
 
     public ProductResponse getProductInfo(int productId);
 
+    public List<ProductResponse> getAllProductInfo();
+
+    public List<ProductResponse> getAllProductPriceByProductInfo(int price);
+
+    public ProductResponse getProductByPrice( int productId, int price);
+
+
+
 
     }

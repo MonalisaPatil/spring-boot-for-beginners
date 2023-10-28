@@ -7,10 +7,12 @@ import com.sj.springbootforbeginners.model.ecommerce.user.User;
 import com.sj.springbootforbeginners.model.orderResponse.Pricing;
 import com.sj.springbootforbeginners.model.orderResponse.Response;
 import com.sj.springbootforbeginners.repository.*;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,13 +36,12 @@ public class OrderService {
     @Autowired
     ProductHasOptionsRepository productHasOptionsRepository;
 
-
     public Response getOrderDetailsbyOrderId(String orderId){
         Order order =  ordersRepository.findByOrderIdString(orderId);
         String orderName = order.getShipName();
         int orderNumber = order.getOrderNumber();
         int quantity = order.getNumberOfItems();
-        User creditCardUser = userRepository.findUserByUserName(orderName);
+        User creditCardUser = userRepository.findUserByUserName(StringUtils.trim(orderName));
         Long creditCardNumber = userHasCreditCardRepository.findCreditCardByUSerID(creditCardUser.getUserId());
         List<OrderHasProducts> products= orderHasProductsRepository.findProuctIdByOrderId(orderNumber);
         List<Integer> price = new ArrayList<>();
@@ -66,6 +67,26 @@ public class OrderService {
         response.setPricing(pricing);
         return response;
     }
+
+
+    public List<Response> getAllOrdersDetails(){
+        List<Response> responses = new ArrayList<>();
+        try {
+            List<Order> orders = ordersRepository.findAll();
+            for (Order temp: orders){
+                Response response = getOrderDetailsbyOrderId(String.valueOf(temp.getOrderNumber()));
+                responses.add(response);
+            }
+        } catch (Exception e){
+            System.out.println("error occurred while get order details "+e);
+            throw e;
+        }
+
+        return responses;
+    }
+
+
+
 
 
 

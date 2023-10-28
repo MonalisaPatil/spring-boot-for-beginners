@@ -19,4 +19,7 @@ public interface ProductHasOptionsRepository extends JpaRepository<ProductHasOpt
 
     @Query(value = "SELECT * FROM firstDatabase.product_has_options pho WHERE product_id = ?1", nativeQuery = true)
     List<ProductHasOptions> findAllOptionsByProductId (int productId);
+
+    @Query(value = "SELECT * FROM firstDatabase.product_has_options pho WHERE price <= ?1",nativeQuery = true)
+    List<ProductHasOptions> findAllOptionsByGivenPriceLessThan( int price);
 }
