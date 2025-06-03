@@ -26,4 +26,5 @@ public class HelloController {
 	public String sayHello(@RequestParam String name, @RequestParam String city, @RequestParam String phoneNumber) {
 		return "Hello "+name  +" Your are located at: "+city + " your phone number is: "+ phoneNumber;
 	}
+
 }
