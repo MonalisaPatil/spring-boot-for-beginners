@@ -5,6 +5,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @RestController
 @RequestMapping("/String/api")
 public class StringController {
@@ -34,4 +37,32 @@ public class StringController {
         }
         return finalResult;
     }
+
+    @GetMapping(value = "/filterChar")
+    public String filterChar(String input, char remove) {
+        String newWord= "";
+        for(int i = 0 ; i < input.length(); i++){
+            if(input.charAt(i) != remove){
+                newWord = newWord.concat(String.valueOf(input.charAt(i)));
+            }
+        }
+        return  newWord;
+    }
+
+    @GetMapping(value = "/listStatement")
+    public String statement(String statement, char skip){
+        String[] breakStatement = statement.split(" ");
+        List<String> list = new ArrayList<>();
+        for(int i = 0; i < breakStatement.length; i++){
+            list.add(breakStatement[i]);
+        }
+        String finalStatement="";
+        for(String elementCheck: breakStatement){
+            if(!elementCheck.contains(String.valueOf(skip))){
+                finalStatement = finalStatement.concat(elementCheck).concat(" ");
+            }
+        }
+    return finalStatement;
+    }
+
 }
