@@ -1,5 +1,6 @@
 package com.sj.springbootforbeginners.controller;
 
+import com.sj.springbootforbeginners.model.Customer;
 import com.sj.springbootforbeginners.model.ShoppingTrend;
 import com.sj.springbootforbeginners.repository.ShoppingTrendsRepository;
 import com.sj.springbootforbeginners.service.ShoppingTrendsService;
@@ -50,13 +51,7 @@ public class EcommerceController {
 
 
 
-// TODO: 10/21/23 write a program  to extract all the customers whose age is lesser than given input
 
-// TODO: 10/21/23  write a program  to extract all the  customer ids whose purchase frequency is annually
-
-// TODO: 10/21/23  write a program  to extract the all the unique frequency of purchases
-// TODO: 10/21/23  write a program  to extract the all the shopped items whose review rating is less than given input
-// TODO: 10/21/23  write a program  to extract the all the customer ids that shopped items of given color;
 
 
     @GetMapping(value ="/custom/getAllShoppingTrendData" , produces = MediaType.APPLICATION_JSON_VALUE)
@@ -69,9 +64,33 @@ public class EcommerceController {
     public List<ShoppingTrend>  getCustomerBasedOnSeason(String season){
         List<ShoppingTrend> filteredShoppingTrends = new ArrayList<>();
         List<ShoppingTrend> shoppingTrends = shoppingTrendsRepository.findAll();
+        for( ShoppingTrend S :shoppingTrends){
+            if(S.getSeason().equalsIgnoreCase(season)){
+                filteredShoppingTrends.add(S);
+            }
+        }
         return filteredShoppingTrends;
     }
 
+    // TODO: 10/21/23 write a program  to extract all the customers ids whose age is lesser than given input
+    @GetMapping(value = "/custom/basedOnAgeRange", produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<Integer> getCustomerBasedOnAgeRange(int age){
+         List<Integer> customerIdList = new ArrayList<>();
+        List<ShoppingTrend> shoppingTrends = shoppingTrendsRepository.findAll();
+        for(ShoppingTrend S : shoppingTrends){
+            if(S.getAge()<age){
+                customerIdList.add(S.getCustomerID());
+            }
+        }
+        return customerIdList;
+    }
+
+// TODO: 10/21/23  write a program  to extract all the  customer ids whose purchase frequency is annually::
+
+// TODO: 10/21/23  write a program  to extract the all the shopped items whose review rating is less than given input::
+// TODO: 10/21/23  write a program  to extract the all the customer ids that shopped items of given color;
+
+// TODO: 10/21/23  write a program  to extract the all the unique frequency of purchases
 
 
 
