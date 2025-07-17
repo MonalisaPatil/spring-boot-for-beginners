@@ -108,12 +108,38 @@ public class EcommerceController {
         }
         return itemsBasedOnRatingsList;
     }
+
+
+    // TODO: 10/21/23  write a program  to extract the all the customer ids that shopped items of given color;
+    @GetMapping(value = "/custom/basedOnColor", produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<Integer> getItemsBasedOnColor(String color) {
+        List<Integer> itemsBasedOnColorList = new ArrayList<>();
+        List<ShoppingTrend> shoppingTrends = shoppingTrendsRepository.findAll();
+        for (ShoppingTrend S : shoppingTrends) {
+            if (S.getColor().equalsIgnoreCase(color)) {
+                itemsBasedOnColorList.add(S.getCustomerID());
+
+            }
+        }
+        return itemsBasedOnColorList;
+
+    }
+
+// TODO: 10/21/23  write a program  to extract the all the unique frequency of purchase
+    @GetMapping(value = "/custom/UniquePurchaseFrequency", produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<String> getUniquePurchaseFrequency() {
+        List<String> UniquePurchaseFrequency = new ArrayList<>();
+        List<ShoppingTrend> shoppingTrends = shoppingTrendsRepository.findAll();
+        for(ShoppingTrend S : shoppingTrends){
+            if(!UniquePurchaseFrequency.contains(S.getFrequencyOfPurchases())){
+                UniquePurchaseFrequency.add(S.getFrequencyOfPurchases());
+            }
+        }
+        return UniquePurchaseFrequency;
+    }
 }
 
 
-// TODO: 10/21/23  write a program  to extract the all the customer ids that shopped items of given color;
- @GetMapping(value = "/custom/basedOnColor", produces = MediaType.APPLICATION_JSON_VALUE)
-public 
 
 
 
@@ -123,8 +149,4 @@ public
 
 
 
-
-
-
-// TODO: 10/21/23  write a program  to extract the all the unique frequency of purchases
 
